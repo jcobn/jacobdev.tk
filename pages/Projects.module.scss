@@ -21,6 +21,15 @@
   color: yellow;
 }
 
+.homeButton {
+  color: #654996;
+  font-size: x-large;
+}
+
+a.homeButton:hover {
+  text-decoration: underline;
+}
+
 a.project:hover {
   text-decoration: underline;
 }

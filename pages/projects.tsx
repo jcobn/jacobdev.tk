@@ -9,7 +9,7 @@ export default function Projects() {
         <title>Kubajsa | Jacob - Projects</title>
       </Head>
       <h2>
-        <Typist>My Projects</Typist>
+        <Typist>my projects</Typist>
       </h2>
       <p>
         <a
@@ -54,6 +54,9 @@ export default function Projects() {
         - Discord bot made with discord.py{" "}
         <span className={styles.language}>(Python)</span>
       </p>
+      <a href="https://jacobdev.tk" className={styles.homeButton}>
+        home
+      </a>
     </div>
   );
 }

@@ -1,0 +1,64 @@
+.activity {
+  padding: 16px;
+  width: 300px;
+  height: 95px;
+
+  transition: background-color 1s;
+  transition: border-color 1s;
+
+  background-color: rgb(22, 22, 22);
+  border: 0.75px solid rgba(200, 200, 200, 0.3);
+  border-radius: 5px;
+
+  &:hover {
+    cursor: default;
+    background-color: rgb(26, 26, 26);
+  }
+
+  &Spotify {
+    @extend .activity;
+
+    background-color: rgb(28, 176, 80);
+    border-color: rgba(155, 255, 190, 0.3);
+
+    &:hover {
+      background-color: rgb(39, 189, 91);
+    }
+  }
+
+  &OnlineStatus {
+    @extend .activity;
+
+    padding: 0px;
+
+    margin-top: 55px;
+    width: 105px;
+    height: 55px;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+
+    &Dnd {
+      @extend .activityOnlineStatus;
+      width: 175px;
+    }
+  }
+}
+
+.primaryImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.secondaryImage {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 50%;
+}

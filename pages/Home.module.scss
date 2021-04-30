@@ -1,0 +1,25 @@
+.container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.purpleText {
+  color: #654996;
+}
+
+a.purpleText:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  transition: 0.15s;
+}
+
+.icon:hover {
+  color: #ae99d1;
+}

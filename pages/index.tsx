@@ -36,11 +36,7 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faDiscord} />
           </a>
-          <a
-            href="https://jacobdev.tk/projects"
-            target="_blank"
-            className={styles.icon}
-          >
+          <a href="https://jacobdev.tk/projects" className={styles.icon}>
             <FontAwesomeIcon icon={faCode} />
           </a>
         </h2>

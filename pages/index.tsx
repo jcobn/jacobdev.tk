@@ -11,6 +11,13 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Kubajsa | Jacob</title>
+        <meta property="og:title" content="jacobdev.tk" />
+        <meta property="og:description" content="Hi, I'm Jacob" />
+        <meta property="og:url" content="https://www.jacobdev.tk" />
+        <meta
+          property="og:image"
+          content="https://kubajsa.github.io/images/github_pfp.png"
+        />
       </Head>
       <div style={{ width: "300px" }}>
         <h1>

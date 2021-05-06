@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Typist from "react-typist";
 import styles from "./Projects.module.scss";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -55,9 +56,9 @@ export default function Projects() {
           - Discord bot made with discord.py{" "}
           <span className={styles.language}>(Python)</span>
         </p>
-        <a href="https://jacobdev.tk" className={styles.homeButton}>
-          home
-        </a>
+        <Link href="/">
+          <a className={styles.homeButton}>home</a>
+        </Link>
       </div>
     </div>
   );

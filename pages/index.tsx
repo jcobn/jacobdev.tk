@@ -5,6 +5,7 @@ import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Lanyard from "../components/Lanyard";
 import styles from "./Home.module.scss";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -44,9 +45,9 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faDiscord} />
           </a>
-          <a href="https://jacobdev.tk/projects" className={styles.icon}>
-            <FontAwesomeIcon icon={faCode} />
-          </a>
+          <Link href="projects">
+            <a className={styles.icon}><FontAwesomeIcon icon={faCode}/></a>
+          </Link>
         </h2>
       </div>
     </div>

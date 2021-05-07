@@ -20,6 +20,7 @@ export default function Home() {
           property="og:image"
           content="https://kubajsa.github.io/images/github_pfp.png"
         />
+        <meta name="description" content="Hi, I'm Jacob" />
       </Head>
       <div style={{ width: "300px" }}>
         <h1>

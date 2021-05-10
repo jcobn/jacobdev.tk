@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Lanyard from "../components/Lanyard";
 import styles from "./Home.module.scss";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 export default function Home() {
@@ -31,7 +30,12 @@ export default function Home() {
       </div>
       <Lanyard />
       <div>
-        <h2>
+        <p>
+          <Link href="projects">
+            <a className={styles.projLink}>my projects</a>
+          </Link>
+        </p>
+        <h2 id={styles.icons}>
           <a
             href="https://link.jacobdev.tk/git"
             target="_blank"
@@ -46,9 +50,6 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faDiscord} />
           </a>
-          <Link href="projects">
-            <a className={styles.icon}><FontAwesomeIcon icon={faCode}/></a>
-          </Link>
         </h2>
       </div>
     </div>

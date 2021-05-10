@@ -1,8 +1,8 @@
+$darkPurple: #654996;
+$lightPurple: #875dcf;
+$lightBlue: #2498e6;
+
 .container {
-  /*position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
   text-align: center;
   font-size: x-large;
   font-weight: 500;
@@ -17,26 +17,24 @@
 }
 
 .purpleText {
-  color: #654996;
+  color: $darkPurple;
 }
 
-.project {
-  color: #2498e6;
+a.project {
+  color: $lightBlue;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .language {
   color: yellow;
 }
 
-.homeButton {
-  color: #654996;
+a.homeButton {
+  color: $lightPurple;
   font-size: x-large;
-}
-
-a.homeButton:hover {
-  text-decoration: underline;
-}
-
-a.project:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }

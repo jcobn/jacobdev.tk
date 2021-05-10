@@ -1,3 +1,7 @@
+$darkPurple: #654996;
+$lightPurple: #875dcf;
+$lighterPurple: #ae99d1;
+
 .container {
   position: absolute;
   top: 35%;
@@ -7,19 +11,26 @@
 }
 
 .purpleText {
-  color: #654996;
+  color: $darkPurple;
 }
 
-a.purpleText:hover {
-  text-decoration: underline;
+a.projLink {
+  color: $lightPurple;
+  font-size: larger;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .icon {
   padding-left: 12.5px;
   padding-right: 12.5px;
   transition: 0.15s;
+  &:hover {
+    color: $lighterPurple;
+  }
 }
 
-.icon:hover {
-  color: #ae99d1;
+#icons {
+  margin-top: 0;
 }

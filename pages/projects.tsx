@@ -44,7 +44,8 @@ export default function Projects() {
           >
             jacobdev.tk
           </a>{" "}
-          - My First Website <span className={styles.language}>(NextJS)</span>
+          - My First Website{" "}
+          <span className={styles.language}>(NextJS, TypeScript)</span>
         </p>
         <p>
           <a

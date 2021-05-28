@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Kubajsa | Jacob</title>
+        <title>Jacob</title>
         <meta property="og:title" content="jacobdev.tk" />
         <meta property="og:description" content="Hi, I'm Jacob" />
         <meta property="og:url" content="https://www.jacobdev.tk" />

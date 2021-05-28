@@ -8,7 +8,7 @@ export default function Projects() {
     <div className={styles.flex}>
       <div className={styles.container}>
         <Head>
-          <title>Kubajsa | Jacob - Projects</title>
+          <title>Jacob - Projects</title>
           <meta name="description" content="My Projects" />
         </Head>
         <h2>

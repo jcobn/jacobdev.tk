@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Typist from "react-typist";
-import styles from "./Projects.module.scss";
-import Link from "next/link";
+import Head from 'next/head';
+import Typist from 'react-typist';
+import styles from './Projects.module.scss';
+import Link from 'next/link';
 
 export default function Projects() {
   return (
@@ -21,8 +21,8 @@ export default function Projects() {
             target="_blank"
           >
             RandomTP
-          </a>{" "}
-          - Minecraft Spigot 1.13-1.16 RandomTP plugin{" "}
+          </a>{' '}
+          - Minecraft Spigot 1.13-1.16 RandomTP plugin{' '}
           <span className={styles.language}>(Java)</span>
         </p>
         <p>
@@ -32,8 +32,8 @@ export default function Projects() {
             target="_blank"
           >
             React Quiz App
-          </a>{" "}
-          - Simple Quiz App made with ReactJS{" "}
+          </a>{' '}
+          - Simple Quiz App made with ReactJS{' '}
           <span className={styles.language}>(ReactJS, TypeScript)</span>
         </p>
         <p>
@@ -43,8 +43,8 @@ export default function Projects() {
             target="_blank"
           >
             jacobdev.tk
-          </a>{" "}
-          - My First Website{" "}
+          </a>{' '}
+          - My First Website{' '}
           <span className={styles.language}>(NextJS, TypeScript)</span>
         </p>
         <p>
@@ -54,8 +54,8 @@ export default function Projects() {
             target="_blank"
           >
             Kubajsa's Bot
-          </a>{" "}
-          - Discord bot made with discord.py{" "}
+          </a>{' '}
+          - Discord bot made with discord.py{' '}
           <span className={styles.language}>(Python)</span>
         </p>
         <Link href="/">

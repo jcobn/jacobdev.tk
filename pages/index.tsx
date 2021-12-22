@@ -1,10 +1,11 @@
-import Head from "next/head";
-import Typist from "react-typist";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Lanyard from "../components/Lanyard";
-import styles from "./Home.module.scss";
-import Link from "next/link";
+import Head from 'next/head';
+import Typist from 'react-typist';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
+import Lanyard from '../components/Lanyard';
+import styles from './Home.module.scss';
+import Link from 'next/link';
+import { faKey } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         />
         <meta name="description" content="Hi, I'm Jacob" />
       </Head>
-      <div style={{ width: "300px" }}>
+      <div style={{ width: '300px' }}>
         <h1>
           <Typist>
             Hello, I'm <span className={styles.purpleText}>Jacob</span>
@@ -49,6 +50,9 @@ export default function Home() {
             className={styles.icon}
           >
             <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          <a href="/KEY.asc" className={styles.icon}>
+            <FontAwesomeIcon icon={faKey} />
           </a>
         </h2>
       </div>

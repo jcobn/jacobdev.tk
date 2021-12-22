@@ -1,17 +1,16 @@
-import styled from "styled-components";
-import { useState, useEffect } from "react";
-import { useLanyard } from "use-lanyard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import styles from "./Lanyard.module.scss";
+import styled from 'styled-components';
+import { useState, useEffect } from 'react';
+import { useLanyard } from 'use-lanyard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import styles from './Lanyard.module.scss';
 
 export default function Lanyard() {
-  const { data: activity } = useLanyard("353870423206920193");
+  const { data: activity } = useLanyard('353870423206920193');
 
-  const [spotifyFormattedTimestamp, setSpotifyFormattedTimestamp] = useState(
-    "0:00 / 0:00"
-  );
-  const [formattedTimestamp, setFormattedTimestamp] = useState("");
+  const [spotifyFormattedTimestamp, setSpotifyFormattedTimestamp] =
+    useState('0:00 / 0:00');
+  const [formattedTimestamp, setFormattedTimestamp] = useState('');
 
   const [intervalCheck, setIntervalCheck] = useState(0);
 
@@ -27,7 +26,7 @@ export default function Lanyard() {
         );
         const currentFormatted = `${Math.floor(current / 60)}:${Math.floor(
           current % 60
-        ).toLocaleString("en-US", {
+        ).toLocaleString('en-US', {
           minimumIntegerDigits: 2,
           useGrouping: false,
         })}`;
@@ -39,7 +38,7 @@ export default function Lanyard() {
         );
         const endFormatted = `${Math.floor(endTime / 60)}:${Math.floor(
           endTime % 60
-        ).toLocaleString("en-US", {
+        ).toLocaleString('en-US', {
           minimumIntegerDigits: 2,
           useGrouping: false,
         })}`;
@@ -66,7 +65,7 @@ export default function Lanyard() {
         }${Math.floor(
           Math.floor(current / 60) -
             Math.floor(Math.floor(current / 60) / 60) * 60
-        )}:${Math.floor(current % 60).toLocaleString("en-US", {
+        )}:${Math.floor(current % 60).toLocaleString('en-US', {
           minimumIntegerDigits: 2,
           useGrouping: false,
         })}`;
@@ -84,9 +83,9 @@ export default function Lanyard() {
   }
 
   const TRANSPARENT_IMAGE =
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
 
-  const BLACKLISTED_GAMES = ["Among Us"];
+  const BLACKLISTED_GAMES = ['Among Us'];
 
   if (
     activity !== undefined &&
@@ -118,7 +117,7 @@ export default function Lanyard() {
                     .large_text !== undefined
                     ? activity.activities.find((act) => act.type === 0).assets
                         .large_text
-                    : ""
+                    : ''
                 }
                 width={60}
                 height={60}
@@ -141,7 +140,7 @@ export default function Lanyard() {
                     .small_text !== undefined
                     ? activity.activities.find((act) => act.type === 0).assets
                         .small_text
-                    : ""
+                    : ''
                 }
                 width={20}
                 height={20}
@@ -186,7 +185,7 @@ export default function Lanyard() {
                 src={
                   activity.listening_to_spotify
                     ? activity.spotify.album_art_url
-                    : ""
+                    : ''
                 }
                 width={60}
                 height={60}
@@ -198,7 +197,7 @@ export default function Lanyard() {
               </Info>
               <Info>
                 {activity.spotify.artist && (
-                  <p>by {activity.spotify.artist.replaceAll(";", ",")}</p>
+                  <p>by {activity.spotify.artist.replaceAll(';', ',')}</p>
                 )}
               </Info>
               <Info>
@@ -216,7 +215,7 @@ export default function Lanyard() {
     activity !== undefined &&
     (activity.active_on_discord_mobile || activity.active_on_discord_desktop)
   ) {
-    if (activity.discord_status === "dnd") {
+    if (activity.discord_status === 'dnd') {
       return (
         <>
           <div className={styles.activityOnlineStatusDnd}>
